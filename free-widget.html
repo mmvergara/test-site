@@ -1,1 +1,22 @@
-https://app.bragly.io/widget/c16d7f26-76f1-42d0-a9b3-725cbb6dc8f8
+<iframe
+  id="bragly-widget-c16d7f26-76f1-42d0-a9b3-725cbb6dc8f8"
+  title="bragly-widget-c16d7f26-76f1-42d0-a9b3-725cbb6dc8f8"
+  src="https://app.bragly.io/widget/c16d7f26-76f1-42d0-a9b3-725cbb6dc8f8"
+  scrolling="no"
+  frameborder="0"
+  allowfullscreen="true"
+  width="100%"
+  style="display: none; width: 100%; min-width: 100%; overflow: hidden"
+></iframe>
+<script>
+  window.addEventListener("message", (event) => {
+    if (event.origin !== "https://app.bragly.io") return;
+    if (event.data?.type === "resize-iframe") {
+      const iframe = document.getElementById(
+        "bragly-widget-c16d7f26-76f1-42d0-a9b3-725cbb6dc8f8"
+      );
+      iframe.style.display = "block";
+      iframe.style.height = `${event.data.height}px`;
+    }
+  });
+</script>
